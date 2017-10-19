@@ -1,0 +1,24 @@
+{
+  "name": "kit-build",
+  "version": "0.0.1",
+  "description": "build tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jskit/kit-build.git"
+  },
+  "keywords": [
+    "build",
+    "tools",
+    "webpack"
+  ],
+  "author": "cloudyan <1395093509@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jskit/kit-build/issues"
+  },
+  "homepage": "https://github.com/jskit/kit-build#readme"
+}
