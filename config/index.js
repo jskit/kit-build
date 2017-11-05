@@ -1,9 +1,6 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
-var chalk = require('chalk')
 var webpack = require('webpack')
-var ProgressBarPlugin = require('progress-bar-webpack-plugin')
-var WebpackNotifierPlugin = require('webpack-build-notifier')
 // import { argv } from 'yargs'
 
 function resolve(dir) {
@@ -39,34 +36,18 @@ const envConst = {
 
 module.exports = {
   template: 'src/index.tpl',
+  logo: resolve('/static/img/logo.png'),
   env: envConst,
   plugins: [
     // 注入全局变量，用于条件判断
     new webpack.DefinePlugin({
       ...envConst,
     }),
-    //进度条插件
-    new ProgressBarPlugin({
-      summary: false,
-      format: chalk.green.bold('[:bar] :percent ') + chalk.yellow('(:elapsed seconds) :msg'),
-      customSummary (buildTime) {
-        process.stdout.write(chalk.green.bold(" ---------buildTime:" + buildTime + "---------"));
-      },
-    }),
-
-    // https://github.com/RoccoC/webpack-build-notifier
-    new WebpackNotifierPlugin({
-      title: 'app',
-      logo: resolve('/static/img/logo.png'),
-      successSound: 'Submarine',
-      failureSound: 'Glass',
-      suppressSuccess: true
-    }),
   ],
   build: {
     env: require('./prod.env'),
-    index: resolve('/dist/index.html'),
-    assetsRoot: resolve('/dist'),
+    index: path.resolve(__dirname, '../dist/index.html'),
+    assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: './static',
     assetsPublicPath: './',
     productionSourceMap: true,

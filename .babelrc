@@ -15,7 +15,7 @@
     // babel-plugin-module-resolver 是一个Babel模块解析插件, 在.babelrc中可以配置模块的导入搜索路径
     // babel对于 export default {} 支持不好
     // 需要插件 babel-plugin-add-module-exports：
-    "add-module-exports",
+    // "add-module-exports", // 这个会引起 route.path 找不到，什么鬼
     "syntax-dynamic-import", // 动态解析 import()，实现路由懒加载
     // "syntax-flow", // 支持解析 flow
     // "syntax-jsx",  // 支持解析 jsx
