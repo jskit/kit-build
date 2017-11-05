@@ -1,5 +1,5 @@
 {
-  "name": "kit-start",
+  "name": "kit-build",
   "version": "0.0.2",
   "description": "vue build tools",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jskit/kit-start.git"
+    "url": "git+https://github.com/jskit/kit-build.git"
   },
   "keywords": [
     "vue",
@@ -25,9 +25,9 @@
   "author": "cloudyan <1395093509@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jskit/kit-start/issues"
+    "url": "https://github.com/jskit/kit-build/issues"
   },
-  "homepage": "https://github.com/jskit/kit-start#readme",
+  "homepage": "https://github.com/jskit/kit-build#readme",
   "dependencies": {
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
