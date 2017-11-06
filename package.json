@@ -1,6 +1,6 @@
 {
   "name": "kit-build",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "vue build tools",
   "main": "index.js",
   "scripts": {
