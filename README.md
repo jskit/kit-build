@@ -1,5 +1,7 @@
 # kit-build
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jskit/kit-build.svg)](https://greenkeeper.io/)
+
 > A Vue.js project build tool
 
 ## Build Setup
